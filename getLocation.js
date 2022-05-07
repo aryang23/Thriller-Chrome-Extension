@@ -1,4 +1,4 @@
-const apiKey = "64466cc8c2844c5285cde36d29d1a667";
+const apiKey = "Your-API-Key";
 let cityElem = document.getElementById("district");
 searchInputBox=document.getElementById("input-box");
 let districtData;
