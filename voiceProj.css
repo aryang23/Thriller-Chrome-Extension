@@ -1,0 +1,29 @@
+.voice-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+      
+}
+#microphoneButton {
+	background: #dbdbdb;
+	outline: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    background: #553C9A;
+}
+#microphoneButton.listen {
+    background: red;
+}
+#microphoneButton.listen #Mic {
+    fill:#ffffff;
+}
+#Mic {
+	height: 80%;
+}
+.voice-text{
+    font-weight: bold;
+}

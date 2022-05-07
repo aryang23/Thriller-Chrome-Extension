@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/* *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(15, 1fr)/repeat(15, 1fr);
+  overflow: hidden;
+} */
+
+.cell {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.cell:nth-child(15n+1):hover ~ .content {
+  --positionX: 0;
+}
+
+.cell:nth-child(n+1):nth-child(-n+15):hover ~ .content {
+  --positionY: 0;
+}
+
+.cell:nth-child(15n+2):hover ~ .content {
+  --positionX: 1;
+}
+
+.cell:nth-child(n+16):nth-child(-n+30):hover ~ .content {
+  --positionY: 1;
+}
+
+.cell:nth-child(15n+3):hover ~ .content {
+  --positionX: 2;
+}
+
+.cell:nth-child(n+31):nth-child(-n+45):hover ~ .content {
+  --positionY: 2;
+}
+
+.cell:nth-child(15n+4):hover ~ .content {
+  --positionX: 3;
+}
+
+.cell:nth-child(n+46):nth-child(-n+60):hover ~ .content {
+  --positionY: 3;
+}
+
+.cell:nth-child(15n+5):hover ~ .content {
+  --positionX: 4;
+}
+
+.cell:nth-child(n+61):nth-child(-n+75):hover ~ .content {
+  --positionY: 4;
+}
+
+.cell:nth-child(15n+6):hover ~ .content {
+  --positionX: 5;
+}
+
+.cell:nth-child(n+76):nth-child(-n+90):hover ~ .content {
+  --positionY: 5;
+}
+
+.cell:nth-child(15n+7):hover ~ .content {
+  --positionX: 6;
+}
+
+.cell:nth-child(n+91):nth-child(-n+105):hover ~ .content {
+  --positionY: 6;
+}
+
+.cell:nth-child(15n+8):hover ~ .content {
+  --positionX: 7;
+}
+
+.cell:nth-child(n+106):nth-child(-n+120):hover ~ .content {
+  --positionY: 7;
+}
+
+.cell:nth-child(15n+9):hover ~ .content {
+  --positionX: 8;
+}
+
+.cell:nth-child(n+121):nth-child(-n+135):hover ~ .content {
+  --positionY: 8;
+}
+
+.cell:nth-child(15n+10):hover ~ .content {
+  --positionX: 9;
+}
+
+.cell:nth-child(n+136):nth-child(-n+150):hover ~ .content {
+  --positionY: 9;
+}
+
+.cell:nth-child(15n+11):hover ~ .content {
+  --positionX: 10;
+}
+
+.cell:nth-child(n+151):nth-child(-n+165):hover ~ .content {
+  --positionY: 10;
+}
+
+.cell:nth-child(15n+12):hover ~ .content {
+  --positionX: 11;
+}
+
+.cell:nth-child(n+166):nth-child(-n+180):hover ~ .content {
+  --positionY: 11;
+}
+
+.cell:nth-child(15n+13):hover ~ .content {
+  --positionX: 12;
+}
+
+.cell:nth-child(n+181):nth-child(-n+195):hover ~ .content {
+  --positionY: 12;
+}
+
+.cell:nth-child(15n+14):hover ~ .content {
+  --positionX: 13;
+}
+
+.cell:nth-child(n+196):nth-child(-n+210):hover ~ .content {
+  --positionY: 13;
+}
+
+.cell:nth-child(15n+15):hover ~ .content {
+  --positionX: 14;
+}
+
+.cell:nth-child(n+211):nth-child(-n+225):hover ~ .content {
+  --positionY: 14;
+}
+
+.content {
+  --positionX: 7;
+  --positionY: 7;
+  position: absolute;
+  top: 28px;
+  /* right: 0;
+  bottom: 0;
+  left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css {
+  font-family: "Fredoka One", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: color 3s infinite linear;
+          animation: color 3s infinite linear;
+  text-shadow: 0 0 10px #000a;
+  transition: all 0.5s;
+}
+.css:nth-child(1) {
+  font-size: 10px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  opacity: 0.1;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 21px)) translateY(calc(-50% - (var(--positionY) - 7) * 21px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(2) {
+  font-size: 20px;
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  opacity: 0.2;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 18px)) translateY(calc(-50% - (var(--positionY) - 7) * 18px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(3) {
+  font-size: 25px;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  opacity: 0.3;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 15px)) translateY(calc(-50% - (var(--positionY) - 7) * 15px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(4) {
+  font-size: 30px;
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  opacity: 0.4;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 12px)) translateY(calc(-50% - (var(--positionY) - 7) * 12px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(5) {
+  font-size: 35px;
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  opacity: 0.5;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 9px)) translateY(calc(-50% - (var(--positionY) - 7) * 9px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(6) {
+  font-size: 40px;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  opacity: 0.6;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 6px)) translateY(calc(-50% - (var(--positionY) - 7) * 6px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(7) {
+  font-size: 45px;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  opacity: 0.7;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 3px)) translateY(calc(-50% - (var(--positionY) - 7) * 3px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(8) {
+  font-size: 50px;
+  -webkit-animation-delay: -2.1s;
+          animation-delay: -2.1s;
+  opacity: 0.8;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * 0px)) translateY(calc(-50% - (var(--positionY) - 7) * 0px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(9) {
+  font-size: 55px;
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  opacity: 0.9;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * -3px)) translateY(calc(-50% - (var(--positionY) - 7) * -3px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+.css:nth-child(10) {
+  font-size: 60px;
+  -webkit-animation-delay: -2.7s;
+          animation-delay: -2.7s;
+  opacity: 1;
+  transform: translateX(calc(-50% - (var(--positionX) - 7) * -6px)) translateY(calc(-50% - (var(--positionY) - 7) * -6px)) rotateX(calc(0deg - (var(--positionY) - 7) * 5deg)) rotateY(calc((var(--positionX) - 7) * 5deg));
+}
+@-webkit-keyframes color {
+  0% {
+    color: #ef8f8f;
+  }
+  10% {
+    color: #efc98f;
+  }
+  20% {
+    color: #dcef8f;
+  }
+  30% {
+    color: #a3ef8f;
+  }
+  40% {
+    color: #8fefb6;
+  }
+  50% {
+    color: #8fefef;
+  }
+  60% {
+    color: #8fb6ef;
+  }
+  70% {
+    color: #a38fef;
+  }
+  80% {
+    color: #dc8fef;
+  }
+  90% {
+    color: #ef8fc9;
+  }
+  100% {
+    color: #ef8f8f;
+  }
+}
+@keyframes color {
+  0% {
+    color: #ef8f8f;
+  }
+  10% {
+    color: #efc98f;
+  }
+  20% {
+    color: #dcef8f;
+  }
+  30% {
+    color: #a3ef8f;
+  }
+  40% {
+    color: #8fefb6;
+  }
+  50% {
+    color: #8fefef;
+  }
+  60% {
+    color: #8fb6ef;
+  }
+  70% {
+    color: #a38fef;
+  }
+  80% {
+    color: #dc8fef;
+  }
+  90% {
+    color: #ef8fc9;
+  }
+  100% {
+    color: #ef8f8f;
+  }
+}

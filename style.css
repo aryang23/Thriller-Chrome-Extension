@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+.main-container{
+    border: 2px solid black;
+    border-radius: 15px;
+    /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background-color: #fff;
+}
+body{
+    width: 300px;
+    background-color: black;
+}
+.usefulApps,.games-container,.coding-resources
+{
+    display: flex;
+    height: 50px;
+    border: none;
+    /* border: 2px solid black; */
+    /* display: none; */
+}
+.name{
+    /* font-family: 'Otomanopee One', sans-serif; */
+    font-family: 'Merriweather', serif;
+/* font-family: 'Otomanopee One', sans-serif; */
+    display: flex;
+    justify-content: center;
+}
+/* Google n Name */
+.name{
+    height: 50px;
+}
+.google{
+    height: 30px;
+}
+.google{
+    /* background-color: rgb(236 222 222); */
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2rem;
+    align-items: center;
+}
+.g-text{
+    /* font-size: small; */
+    /* font-style: bold; */
+    font-weight: bold;
+}
+.search-box{
+    height: 25px;
+    /* margin-left: 10px; */
+    /* margin-top: 3px; */
+    width: 180px;
+    /* border-radius: 10%; */
+    /* background-color:rgb(197, 191, 191); */
+    background-color: #f1f3f5;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+    background-color: #ebedf5;
+    border-color: #ebedf5;
+}
+.search-box:focus {
+    background-color: rgba(255,255,255);
+}
+.fab.fa-google
+{
+    /* margin-top: 8px; */
+    color: red;
+    font-size: large;
+}
+.g-icon{
+    display: inline;
+}
+.google-icon{
+    margin-top: 4px;
+}
+
+
+
+.weather{
+    /* height: 60px; */
+    height: 94px;
+}
+
+/* Quote Container */
+.quote{
+    height: 100px;
+    border: none;
+    /* display: none; */
+}
+.quote-btn{
+    height: 20px;
+    /* margin: 0 auto; */
+    margin-left: 35%;
+}
+.quote-text{
+    height: 60px;
+    border: 2px solid black;
+    /* border-size: 15px; */
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+/* Useful Apps */
+.usefulApps div{
+    width: 59px;
+}
+.usefulIcon{
+    /* font-size: 30px; */
+    margin-left: 10px;
+    border: none;
+    display: flex;
+}
+.use-text{
+    font-size:small;
+    margin-left: 10px;
+    /* margin-top: 5px; */
+    border: none;
+}
+.useful-div{
+    /* display: flex; */
+    /* /* justify-content: center; */
+    /* align-items: center;  */
+
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 55%);
+    /* background: 15px; */
+    border-radius: 15px;
+}
+
+
+
+.games-container div{
+    width: 59px;
+}
+
+.song-player{
+    height: 90px;
+}
+
+
+/* Coding Resources */
+.fas.fa-code
+{
+    font-size: xx-large;
+}
+.codingIcon{
+    font-size: 30px;
+    margin-left: 10px;
+    border: none;
+}
+.coding-text{
+    font-size:smaller;
+    /* margin-left: 10px; */
+    margin-top: 1px;
+    border: none;
+    text-align: center;
+}
+.coding-resources div{
+    width: 59px;
+}
+.leetcode-container{
+    /* display: none; */
+    /* color: #582233; */
+    padding: 20px;
+    /* line-height: 2rem; */
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.8);
+    /* height: 50vh; */
+    /* position: relative; */
+    /* background-color: black; */
+    width: 248px;
+    /* left: 30px; */
+    /* right: 20rem; */
+    /* height: 20vh; */
+    display: none;
+    position: absolute;
+}
+.iconify{
+    font-size: xx-large;
+}
+

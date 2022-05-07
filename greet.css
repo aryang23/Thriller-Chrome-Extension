@@ -1,0 +1,9 @@
+.greet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+.greet a{
+    /* color: skyblue; */
+}

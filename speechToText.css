@@ -1,0 +1,31 @@
+.speechToText
+{
+    /* display: flex;
+    align-items: flex-end; */
+}
+.speechBtn{
+    background: #553C9A;
+    color: #fff;
+    height: 100%;
+    font-size: 16px;
+    /* padding: 0 20px; */
+    cursor: pointer;
+    width: 120px;
+    border-radius: 15px;
+    padding: 2px;
+    gap: 10px;
+    margin-left: 16px;
+}
+
+.instructions{
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    margin-left: 3px;
+    border-radius: 15px;
+    height: 90px;
+    display: none;
+}
