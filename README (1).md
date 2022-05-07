@@ -37,15 +37,20 @@ This Project even won the First Prize in a Hackathon at our Campus.
 
 ## Screenshots
 
-
+# Image 0
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl1.png)
+# Image 1
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl2.png)
+# Image 2
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl3.png)
+# Image 3
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl4Jarvis.png)
+# Image 4
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl5Weather.png)
+# Image 5
 ![alt text](https://github.com/aryang23/Thriller-Chrome-Extension/blob/main/Screenshots/Thrl6Dict.png)
 
 ## 🚀 About Me
 I'm a full stack developer...
 You can check more about me at: - github.com/aryang23
-LinkedIn: - 
+LinkedIn: - https://www.linkedin.com/in/aryan-grover/
