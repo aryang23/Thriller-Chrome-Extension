@@ -1,6 +1,6 @@
 let input = document.querySelector('.dict-input');
 let searchBtn = document.querySelector('.dict-button');
-let dictApiKey = '7dc521e0-736b-4d80-84cf-77695154de79';
+let dictApiKey = 'Your-API-Key';
 let notFound = document.querySelector('.not__found');
 let defBox = document.querySelector('.def');
 let audioBox = document.querySelector('.audio');
