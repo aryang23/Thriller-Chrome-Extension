@@ -1,7 +1,7 @@
 // const e = require("express");
 
 const weatherApi={
-    key:"78115c64533a5f5e735b61213c3848d7",
+    key:"Your-API-Key",
     baseUrl:"https://api.openweathermap.org/data/2.5/weather"
 }
 
